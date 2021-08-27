@@ -47,6 +47,7 @@ fn get_resume_chunk_offsets(fname: &str, ct_len: u64, chunk_size: u64) -> Result
         let n = (l[0].parse::<u64>()?, l[1].parse::<u64>()?);
         downloaded.push(n);
     }
+    // 元组第一个查找
     downloaded.sort_by_key(|a| a.1);
     let mut chunks = vec![];
 

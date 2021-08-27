@@ -63,6 +63,7 @@ pub struct FtpDownload {
 }
 
 impl FtpDownload {
+    // create new FtpDownload
     pub fn new(url: Url) -> Self {
         Self {
             url,
